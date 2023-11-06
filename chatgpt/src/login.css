@@ -1,0 +1,230 @@
+/* 배경 설정 */
+.container {
+  background: #dccbed;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 백그라운드 박스 스타일링 */
+.welcome {
+background: #ffffff;
+width: 650px;
+height: 415px;
+position: absolute;
+top: 25%;
+border-radius: 5px;
+box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+}
+
+/* 로그인 회원가입 박스 설정 */
+.loginbox {
+position: absolute;
+top: -10%;
+left: 5%;
+background: #9979c1;
+width: 320px;
+height: 500px;
+border-radius: 5px;
+box-shadow: 2px 0 10px rgba(0,0,0,.1);
+transition: all .5s ease-in-out;
+z-index: 2;
+}
+
+/* 기본으로 숨겨진 요소 처리 */
+.nodisplay {
+display: none;
+transition: all .5s ease;
+}
+
+/* 왼쪽, 오른쪽 박스의 기본 설정 */
+.leftbox,
+.rightbox {
+position: absolute;
+width: 50%;
+transition: 1s all ease;
+}
+
+/* 왼쪽 박스의 위치 설정 */
+.leftbox {
+left: -2%;
+}
+
+/* 오른쪽 박스의 위치 설정 */
+.rightbox {
+right: -2%;
+}
+
+/* 회원가입, 로그인 텍스트 설정 */
+h1 {
+font-family: 'Open Sans', sans-serif;
+text-align: center;
+margin-top: 95px;
+text-transform: uppercase;
+color: #f6f6f6;
+font-size: 2em;
+letter-spacing: 8px;
+}
+
+/* 타이틀 텍스트 설정 */
+.title {
+font-family: 'Lora', serif;
+color: #8E9AAF;
+font-size: 1.8em;
+line-height: 1.1em;
+letter-spacing: 3px;
+text-align: center;
+font-weight: 300;
+margin-top: 20%;
+}
+
+/* 설명 텍스트와 아래로 가는 간격 설정 */
+.desc {
+margin-top: -8px;
+}
+
+/* 계정 정보 텍스트 설정 */
+.account {
+margin-top: 45%;
+font-size: 10px;
+}
+
+/* 기본 텍스트 스타일링 */
+p {
+font-family: 'Open Sans', sans-serif;
+font-size: .7em;
+letter-spacing: 2px;
+color: #8E9AAF;
+text-align: center;
+}
+
+/* 특정 텍스트 강조 처리 */
+.span2 {
+color: #EAC7CC;
+}
+
+/* 한신로고 이미지 설정 */
+.hanshinlogo {
+position: absolute;
+width: 120px;
+height: 120px;
+top: 46%;
+left: 31%;
+opacity: .7;
+}
+
+/* 한신마스코트 이미지 설정 */
+.hanshinmascot {
+width: 90px;
+height: 100px;
+top: 48%;
+left: 31%;
+opacity: .9;
+}
+
+/* 기본 버튼 스타일링 */
+button {
+padding: 12px;
+font-family: 'Open Sans', sans-serif;
+text-transform: uppercase;
+letter-spacing: 3px;
+font-size: 11px;
+border-radius: 10px;
+margin: auto;
+outline: none;
+display: block;
+}
+
+/* 버튼 호버 시 효과 */
+button:hover {
+background: #EAC7CC;
+color: #f6f6f6;
+transition: background-color 1s ease-out;
+}
+
+/* 로그인, 회원가입 버튼 설정 */
+.button {
+margin-top: 3%;
+background: #f6f6f6;
+color: #BDA5A8;
+border: solid 1px #EAC7CC;
+}
+
+/* 폼 요소 스타일링 */
+form {
+display: flex;
+align-items: center;
+flex-direction: column;
+padding-top: 7px;
+}
+
+/* 로그인 폼에 추가 패딩 설정 */
+.more-padding {
+padding-top: 35px;
+}
+
+/* 로그인 폼 인풋에 추가 패딩 설정 */
+.more-padding input {
+padding: 12px;
+}
+
+/* 로그인 버튼 위로 여백 추가 */
+.more-padding .submit {
+margin-top: 90px;
+}
+
+/* 회원가입 버튼 스타일링 */
+.submit {
+margin-top: 25px;
+padding: 12px;
+border-color: #BDA5A8;
+}
+
+/* 회원가입 버튼 호버 효과 */
+.submit:hover {
+background: #CBC0D3;
+border-color: #BFB2C6;
+}
+
+/* 인풋 필드 스타일링 */
+.input2 {
+background: #eadff2;
+width: 65%;
+color: #BDA5A8;
+border: none;
+border-bottom: 1px solid rgba(246, 246, 246, 0.5);
+padding: 9px;
+margin: 7px;
+}
+
+/* 인풋 필드의 플레이스홀더 스타일링 */
+input::placeholder {
+color: rgba(246, 246, 246, 1);
+letter-spacing: 2px;
+font-size: 1.3em;
+font-weight: 100;
+}
+
+/* 인풋 필드에 포커스 시 스타일링 */
+input:focus {
+color: #BDA5A8;
+outline: none;
+border-bottom: 1.2px solid rgba(189, 165, 168, 0.7);
+font-size: 1em;
+transition: .8s all ease;
+}
+
+/* 인풋 필드에 포커스 시 플레이스홀더 사라짐 효과 */
+input:focus::placeholder {
+opacity: 0;
+}
+
+/* 라벨 스타일링 */
+label {
+font-family: 'Open Sans', sans-serif;
+color: #BDA5A8;
+font-size: 0.8em;
+letter-spacing: 1px;
+}
